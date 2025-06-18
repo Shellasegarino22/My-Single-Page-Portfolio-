@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap');
+
+:root {
+  --primary-color: #4a90e2;
+  --background-color: transparent;
+  --text-color: #ffffff;
+  --accent-color: #add8ff;
+  --border-radius: 12px;
+  --spacing-small: 16px;
+  --spacing-medium: 24px;
+  --spacing-large: 200px;
+  --max-content-width: 1000px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: url('https://hips.hearstapps.com/hmg-prod/images/spring-flowers-65de4a13478ee.jpg?crop=0.668xw:1.00xh;0.287xw,0&resize=1200:*') no-repeat center center fixed;
+  background-size: cover;
+  color: var(--text-color);
+  line-height: 1.8;
+  min-height: 100vh;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(20px);
+  color: #fff;
+  padding: var(--spacing-medium);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+  margin-top: var(--spacing-small);
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-medium);
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5em 0.75em;
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--primary-color);
+}
+
+main {
+  max-width: var(--max-content-width);
+  margin: var(--spacing-large) auto;
+  padding: 0 var(--spacing-medium);
+}
+
+section {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-large);
+  margin-bottom: var(--spacing-large);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: var(--max-content-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  margin-top: 0;
+  text-align: center;
+}
+
+section p, section ul {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.125rem;
+  line-height: 1.80;
+}
+
+#skills ul {
+  padding-left: 1.25rem;
+}
+
+#skills li {
+  margin-bottom: 0.75rem;
+}
+
+#projects p {
+  font-style: italic;
+  color: #f1f1f1;
+}
+
+#contact a {
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+#landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+#landing h1 {
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0.5em;
+}
+
+#landing p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5em;
+}
+
+/* 🔵 LANDING IMAGE STYLE HERE */
+.landing-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 100%;
+  display: block;
+  margin: 0 auto 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 4px solid #ffffff;
+}
+
+.btn {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 0.75em 1.5em;
+  font-size: 1rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #357ab7;
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  text-align: center;
+  padding: var(--spacing-small);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    gap: var(--spacing-medium);
+  }
+  section {
+    padding: var(--spacing-medium);
+  }
+  #landing h1 {
+    font-size: 2rem;
+  }
+  }
