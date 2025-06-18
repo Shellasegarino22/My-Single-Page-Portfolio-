@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shella Marie Segarino - Portfolio</title>
+  <link rel="stylesheet" href="my portfolio3.css" />
+</head>
+<body>
+  <header>
+    <h1><b>Welcome to My Portfolio!</b></h1>
+    <nav>
+      <ul>
+        <li><a href="#landing">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="landing">
+      <img src="/storage/emulated/0/Pictures/Messenger/received_1123168265614788.jpeg" height="300" width="400" class="landing-img"/>
+      <h1>Hi! I'm Shella Marie</h1>
+      <p>An aspiring web developer who blends code with creativity.</p>
+      <a href="#about"><button class="btn">Explore My Portfolio</button></a>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm Shella Marie Segarino, a budding coder who loves reading and technology. I enjoy creating imaginative and useful web experiences, and I'm getting better at HTML, CSS, and JavaScript. In addition to coding, books inspire me and help me develop my creativity and problem-solving abilities. I welcome every obstacle as a chance to learn and grow in the tech world.
+        <br><br>
+        "Every great coder once typed their first line—I'm just getting started, one script and story at a time."
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript (basic)</li>
+        <li>Responsive Web Design</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Here are a few of the projects I've worked on:</p>
+      <ul>
+        <li>
+          <a href="https://shellasegarino22.github.io/Planner-list/" target="_blank">
+            Planner List Website (HTML, CSS, JavaScript)
+          </a>
+        </li>
+        <li>My first responsive portfolio page</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Phone: <a href="tel:+639923128936">09923128936</a></p>
+      <p>Email: <a href="mailto:segarinoshellamarie@gmail.com">segarinoshellamarie@gmail.com</a></p>
+      <p>Facebook: <a href="https://www.facebook.com/Shella.Segarino" target="_blank">Shella Segarino</a></p>
+      <p>Instagram: <a href="https://instagram.com/shesegarino22" target="_blank">@shesegarino22</a></p>
+    </section>
+  </main>
+
+  <button id="scrollToTopBtn" title="Go to top">↑</button>
+
+  <footer>
+    <p>&copy; 2025 Shella Marie Segarino. All rights reserved.</p>
+  </footer>
+
+  <script src="my portfolio 2.js"></script>
+</body>
+</html>
